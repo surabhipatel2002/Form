@@ -1,0 +1,67 @@
+.container{
+    background: wheat;
+    border: 1px solid midnightblue;
+}
+body{
+    padding: 20px 0;
+    background-color: aliceblue;
+}
+.carousel-indicators{
+    right: auto;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    opacity: 1.5 !important;
+
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.check-box{
+    display: none;
+}
+.login-box{
+    display: none;
+}
+h1{
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}
+.button-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-danger{
+    padding: 10px 35px;
+    margin: 10px;
+}
+h3{
+    text-align: center;
+    font-family: emoji;
+}
+.carousel-indicators .active {
+    opacity: initial;
+    background-color: black ;
+}
+
+.carousel-indicators li{
+    opacity: 1;
+}
+
+.radio-padding{
+    padding: 40px;
+}
+.label-name{
+    font-family: emoji;
+    font-size: 18px;
+}
+

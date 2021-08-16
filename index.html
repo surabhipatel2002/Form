@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Form Information</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <ul class="carousel-indicators">
+                    <li data-slide-to="0" id="dataslide1" class="active dataslide1"></li>
+                    <li data-slide-to="1" id="dataslide2"></li>
+                    <li data-slide-to="2" id="dataslide3"></li>
+                </ul>
+            </div>
+            <div id="radio-box">
+                <div id="radio-section">
+                    <h3>Name Information</h3>
+                    <div class="radio-padding">
+                        <div class="form-group">
+                            <label class="label-name" for="usr">First Name:</label>
+                            <input type="text" class="form-control" id="usr" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-name" for="usr">Last Name:</label>
+                            <input type="text" class="form-control" id="usr" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-name" for="usr">Middle Name:</label>
+                            <input type="text" class="form-control" id="usr" name="username">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-class">
+                    <button type="button" id="changebutton" class="btn btn-danger" onclick="nextbutton()">Next</button>
+                </div>
+            </div>
+
+
+        </form>
+        <div class="check-box" id="check-box">
+            <div id="checkbox-section" class="radio-section tab">
+                <h3>Contect Information</h3>
+                <div class="radio-padding">
+                    <div class="form-group">
+                        <label class="label-name" for="usr">Email id:</label>
+                        <input type="text" class="form-control" id="usr" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-name" for="pwd">Phone:</label>
+                        <input type="password" class="form-control" id="pwd" name="password">
+                    </div>
+                </div>
+            </div>
+            <div class="button-class">
+                <button type="button" class="btn btn-danger prevbutton" onclick="previous()">Previous</button>
+                <button type="button" id="changebutton" class="btn btn-danger" onclick="submit()">Next</button>
+            </div>
+        </div>
+        <div class="login-box" id="login-box">
+            <div>
+                <h3>Create Account Information</h3>
+                <div class="radio-padding">
+                    <div class="form-group">
+                        <label class="label-name" for="usr">Username:</label>
+                        <input type="text" class="form-control" id="usr" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-name" for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-name" for="pwd">Conform Password:</label>
+                        <input type="password" class="form-control" id="pwd" name="password">
+                    </div>
+                </div>
+            </div>
+            <div class="button-class">
+                <button type="button" id="prevBtn" class="btn btn-danger prevbutton"
+                    onclick="prevrevoures()">Previous</button>
+                <button type="button" id="changebutton" class="btn btn-danger">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
