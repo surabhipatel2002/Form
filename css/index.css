@@ -5,6 +5,7 @@
 body{
     padding: 20px 0;
     background-color: aliceblue;
+    font-family: emoji;
 }
 .carousel-indicators{
     right: auto;
@@ -28,6 +29,8 @@ body{
 }
 h1{
     text-align: center;
+    text-decoration: underline;
+    padding-bottom: 20px;
 }
 
 @media (min-width: 768px){
