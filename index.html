@@ -16,80 +16,87 @@
 <body>
     <h1>Form</h1>
     <div class="container">
-        <form>
+        <div onkeyup="onkeyupFunction()">
             <div>
                 <ul class="carousel-indicators">
-                    <li data-slide-to="0" id="dataslide1" class="active dataslide1"></li>
-                    <li data-slide-to="1" id="dataslide2"></li>
-                    <li data-slide-to="2" id="dataslide3"></li>
+                    <li onclick="dataslide0()" id="dataslide1" class="active dataslide1"></li>
+                    <li onclick="dataslide1()" id="dataslide2"></li>
+                    <li onclick="dataslide2()" id="dataslide3"></li>
                 </ul>
             </div>
             <div id="radio-box">
                 <div id="radio-section">
                     <h3>Name Information</h3>
-                    <div class="radio-padding">
+                    <div class="radio-padding" id="inputvalid">
                         <div class="form-group">
                             <label class="label-name" for="usr">First Name:</label>
-                            <input type="text" class="form-control" id="usr" name="username">
+                            <input type="text" class="form-control" id="first" name="first" required>
+                            <p id="first_name" class="red_color"></p>
                         </div>
                         <div class="form-group">
                             <label class="label-name" for="usr">Last Name:</label>
-                            <input type="text" class="form-control" id="usr" name="username">
+                            <input type="text" class="form-control" id="last" name="last" required>
+                            <p id="last_name" class="red_color"></p>
                         </div>
                         <div class="form-group">
                             <label class="label-name" for="usr">Middle Name:</label>
-                            <input type="text" class="form-control" id="usr" name="username">
+                            <input type="text" class="form-control" id="Middle" name="Middle" required >
+                            <p id="your_email" class="red_color"></p>
                         </div>
                     </div>
                 </div>
                 <div class="button-class">
-                    <button type="button" id="changebutton" class="btn btn-danger" onclick="nextbutton()">Next</button>
+                    <button type="button" id="changebutton1" class="btn btn-danger" onclick="nextbutton()">Next</button>
                 </div>
             </div>
 
-
-        </form>
-        <div class="check-box" id="check-box">
-            <div id="checkbox-section" class="radio-section tab">
-                <h3>Contect Information</h3>
-                <div class="radio-padding">
-                    <div class="form-group">
-                        <label class="label-name" for="usr">Email id:</label>
-                        <input type="text" class="form-control" id="usr" name="username">
-                    </div>
-                    <div class="form-group">
-                        <label class="label-name" for="pwd">Phone:</label>
-                        <input type="password" class="form-control" id="pwd" name="password">
-                    </div>
-                </div>
-            </div>
-            <div class="button-class">
-                <button type="button" class="btn btn-danger prevbutton" onclick="previous()">Previous</button>
-                <button type="button" id="changebutton" class="btn btn-danger" onclick="submit()">Next</button>
-            </div>
-        </div>
-        <div class="login-box" id="login-box">
-            <div>
-                <h3>Create Account Information</h3>
-                <div class="radio-padding">
-                    <div class="form-group">
-                        <label class="label-name" for="usr">Username:</label>
-                        <input type="text" class="form-control" id="usr" name="username">
-                    </div>
-                    <div class="form-group">
-                        <label class="label-name" for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" name="password">
-                    </div>
-                    <div class="form-group">
-                        <label class="label-name" for="pwd">Conform Password:</label>
-                        <input type="password" class="form-control" id="pwd" name="password">
+            <div class="check-box" id="check-box">
+                <div id="checkbox-section" class="radio-section tab">
+                    <h3>Contect Information</h3>
+                    <div class="radio-padding">
+                        <div class="form-group">
+                            <label class="label-name" for="usr">Phone:</label>
+                            <input type="number" class="form-control" id="phone" name="phone">
+                            <p id="your_phone" class="red_color"></p>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-name" for="pwd">Work Phone:</label>
+                            <input type="number" class="form-control" id="workphone" name="workphone">
+                            <p id="your_workphone" class="red_color"></p>
+                        </div>
                     </div>
                 </div>
+                <div class="button-class">
+                    <button type="button" class="btn btn-danger prevbutton" onclick="previous()">Previous</button>
+                    <button type="button" id="changebutton2" class="btn btn-danger" onclick="submit()">Next</button>
+                </div>
             </div>
-            <div class="button-class">
-                <button type="button" id="prevBtn" class="btn btn-danger prevbutton"
-                    onclick="prevrevoures()">Previous</button>
-                <button type="button" id="changebutton" class="btn btn-danger">Submit</button>
+            <div class="login-box" id="login-box">
+                <div>
+                    <h3>Create Account Information</h3>
+                    <div class="radio-padding">
+                        <div class="form-group">
+                            <label class="label-name" for="usr">Username:</label>
+                            <input type="text" class="form-control" id="username" name="username">
+                            <p id="your_username" class="red_color"></p>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-name" for="pwd">Password:</label>
+                            <input type="number" class="form-control" id="password" name="password" >
+                            <p id="your_password" class="red_color"></p>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-name" for="pwd">Conform Password:</label>
+                            <input type="number" class="form-control" id="Conform" name="Conform">
+                            <p id="your_Conform" class="red_color"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-class">
+                    <button type="button" id="prevBtn" class="btn btn-danger prevbutton"
+                        onclick="prevrevoures()">Previous</button>
+                    <button type="button" id="changebutton3" class="btn btn-danger" onclick="finalSubmit()">Submit</button>
+                </div>
             </div>
         </div>
     </div>

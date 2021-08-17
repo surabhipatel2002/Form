@@ -27,6 +27,15 @@ body{
 .login-box{
     display: none;
 }
+.id-box{
+    display: none;
+}
+.red_color {
+    color: red;
+}
+.red_border{
+    border: 1px solid red;
+}
 h1{
     text-align: center;
     text-decoration: underline;
