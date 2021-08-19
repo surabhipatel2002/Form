@@ -16,15 +16,16 @@
 <body>
     <h1>Form</h1>
     <div class="container">
-        <div onkeyup="onkeyupFunction()">
-            <div>
-                <ul class="carousel-indicators">
-                    <li onclick="dataslide0()" id="dataslide1" class="active dataslide1"></li>
-                    <li onclick="dataslide1()" id="dataslide2"></li>
-                    <li onclick="dataslide2()" id="dataslide3"></li>
-                </ul>
-            </div>
-            <div id="radio-box">
+        <div>
+            <ul class="carousel-indicators">
+                <li onclick="dataslide0()" id="dataslide1" class="active dataslide1"></li>
+                <li onclick="dataslide1()" id="dataslide2"></li>
+                <li onclick="dataslide2()" id="dataslide3"></li>
+            </ul>
+        </div>
+        <div >
+
+            <div id="radio-box" onkeyup="onkeyupFunction()">
                 <div id="radio-section">
                     <h3>Name Information</h3>
                     <div class="radio-padding" id="inputvalid">
@@ -40,7 +41,7 @@
                         </div>
                         <div class="form-group">
                             <label class="label-name" for="usr">Middle Name:</label>
-                            <input type="text" class="form-control" id="Middle" name="Middle" required >
+                            <input type="text" class="form-control" id="Middle" name="Middle" required>
                             <p id="your_email" class="red_color"></p>
                         </div>
                     </div>
@@ -50,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="check-box" id="check-box">
+            <div class="check-box" id="check-box" onkeyup="onkeycheckbox()">
                 <div id="checkbox-section" class="radio-section tab">
                     <h3>Contect Information</h3>
                     <div class="radio-padding">
@@ -71,7 +72,7 @@
                     <button type="button" id="changebutton2" class="btn btn-danger" onclick="submit()">Next</button>
                 </div>
             </div>
-            <div class="login-box" id="login-box">
+            <div class="login-box" id="login-box" onkeyup="onkeyloginbox()">
                 <div>
                     <h3>Create Account Information</h3>
                     <div class="radio-padding">
@@ -82,7 +83,7 @@
                         </div>
                         <div class="form-group">
                             <label class="label-name" for="pwd">Password:</label>
-                            <input type="number" class="form-control" id="password" name="password" >
+                            <input type="number" class="form-control" id="password" name="password">
                             <p id="your_password" class="red_color"></p>
                         </div>
                         <div class="form-group">
@@ -95,7 +96,8 @@
                 <div class="button-class">
                     <button type="button" id="prevBtn" class="btn btn-danger prevbutton"
                         onclick="prevrevoures()">Previous</button>
-                    <button type="button" id="changebutton3" class="btn btn-danger" onclick="finalSubmit()">Submit</button>
+                    <button type="button" id="changebutton3" class="btn btn-danger"
+                        onclick="finalSubmit()">Submit</button>
                 </div>
             </div>
         </div>
